@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAC696351B8CAD2300AC5E18 /* Acceleration.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAC696301B8CAD2300AC5E18 /* Acceleration.mm */; };
+		FAC696371B8CAD2300AC5E18 /* Motion.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAC696341B8CAD2300AC5E18 /* Motion.mm */; };
+		FAC696571B8CAEA800AC5E18 /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6963A1B8CAEA700AC5E18 /* F53OSCBundle.m */; };
+		FAC696581B8CAEA800AC5E18 /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6963C1B8CAEA700AC5E18 /* F53OSCClient.m */; };
+		FAC696591B8CAEA800AC5E18 /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6963F1B8CAEA700AC5E18 /* F53OSCMessage.m */; };
+		FAC6965A1B8CAEA800AC5E18 /* F53OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC696411B8CAEA700AC5E18 /* F53OSCPacket.m */; };
+		FAC6965B1B8CAEA800AC5E18 /* F53OSCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC696431B8CAEA700AC5E18 /* F53OSCParser.m */; };
+		FAC6965C1B8CAEA800AC5E18 /* F53OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC696461B8CAEA700AC5E18 /* F53OSCServer.m */; };
+		FAC6965D1B8CAEA800AC5E18 /* F53OSCSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC696481B8CAEA700AC5E18 /* F53OSCSocket.m */; };
+		FAC6965E1B8CAEA800AC5E18 /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6964A1B8CAEA700AC5E18 /* F53OSCTimeTag.m */; };
+		FAC6965F1B8CAEA800AC5E18 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6964C1B8CAEA800AC5E18 /* GCDAsyncSocket.m */; };
+		FAC696601B8CAEA800AC5E18 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC6964E1B8CAEA800AC5E18 /* GCDAsyncUdpSocket.m */; };
+		FAC696611B8CAEA800AC5E18 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC696501B8CAEA800AC5E18 /* NSData+F53OSCBlob.m */; };
+		FAC696621B8CAEA800AC5E18 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC696521B8CAEA800AC5E18 /* NSDate+F53OSCTimeTag.m */; };
+		FAC696631B8CAEA800AC5E18 /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC696541B8CAEA800AC5E18 /* NSNumber+F53OSCNumber.m */; };
+		FAC696641B8CAEA800AC5E18 /* NSString+F53OSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC696561B8CAEA800AC5E18 /* NSString+F53OSCString.m */; };
+		FAF12B0C1AEA5E1200C8327D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF12B0B1AEA5E1200C8327D /* main.m */; };
+		FAF12B0F1AEA5E1200C8327D /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAF12B0E1AEA5E1200C8327D /* AppDelegate.mm */; };
+		FAF12B121AEA5E1200C8327D /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAF12B111AEA5E1200C8327D /* ViewController.mm */; };
+		FAF12B151AEA5E1200C8327D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF12B131AEA5E1200C8327D /* Main.storyboard */; };
+		FAF12B171AEA5E1200C8327D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF12B161AEA5E1200C8327D /* Images.xcassets */; };
+		FAF12B1A1AEA5E1200C8327D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF12B181AEA5E1200C8327D /* LaunchScreen.xib */; };
+		FAF12B261AEA5E1200C8327D /* Fuchair_2_0Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAF12B251AEA5E1200C8327D /* Fuchair_2_0Tests.mm */; };
+		FAF12B6A1AEA5FB700C8327D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF12B691AEA5FB700C8327D /* CoreMotion.framework */; };
+		FAF12B701AEA626100C8327D /* SensorOscSend.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAF12B6E1AEA626100C8327D /* SensorOscSend.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAF12B201AEA5E1200C8327D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF12AFE1AEA5E1200C8327D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF12B051AEA5E1200C8327D;
+			remoteInfo = "Fuchair 2.0";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAC6962F1B8CAD2300AC5E18 /* Acceleration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acceleration.h; sourceTree = "<group>"; };
+		FAC696301B8CAD2300AC5E18 /* Acceleration.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Acceleration.mm; sourceTree = "<group>"; };
+		FAC696331B8CAD2300AC5E18 /* Motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motion.h; sourceTree = "<group>"; };
+		FAC696341B8CAD2300AC5E18 /* Motion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Motion.mm; sourceTree = "<group>"; };
+		FAC696381B8CAEA700AC5E18 /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSC.h; path = OSC/F53OSC.h; sourceTree = "<group>"; };
+		FAC696391B8CAEA700AC5E18 /* F53OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCBundle.h; path = OSC/F53OSCBundle.h; sourceTree = "<group>"; };
+		FAC6963A1B8CAEA700AC5E18 /* F53OSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCBundle.m; path = OSC/F53OSCBundle.m; sourceTree = "<group>"; };
+		FAC6963B1B8CAEA700AC5E18 /* F53OSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCClient.h; path = OSC/F53OSCClient.h; sourceTree = "<group>"; };
+		FAC6963C1B8CAEA700AC5E18 /* F53OSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCClient.m; path = OSC/F53OSCClient.m; sourceTree = "<group>"; };
+		FAC6963D1B8CAEA700AC5E18 /* F53OSCFoundationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCFoundationAdditions.h; path = OSC/F53OSCFoundationAdditions.h; sourceTree = "<group>"; };
+		FAC6963E1B8CAEA700AC5E18 /* F53OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCMessage.h; path = OSC/F53OSCMessage.h; sourceTree = "<group>"; };
+		FAC6963F1B8CAEA700AC5E18 /* F53OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCMessage.m; path = OSC/F53OSCMessage.m; sourceTree = "<group>"; };
+		FAC696401B8CAEA700AC5E18 /* F53OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCPacket.h; path = OSC/F53OSCPacket.h; sourceTree = "<group>"; };
+		FAC696411B8CAEA700AC5E18 /* F53OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCPacket.m; path = OSC/F53OSCPacket.m; sourceTree = "<group>"; };
+		FAC696421B8CAEA700AC5E18 /* F53OSCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCParser.h; path = OSC/F53OSCParser.h; sourceTree = "<group>"; };
+		FAC696431B8CAEA700AC5E18 /* F53OSCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCParser.m; path = OSC/F53OSCParser.m; sourceTree = "<group>"; };
+		FAC696441B8CAEA700AC5E18 /* F53OSCProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCProtocols.h; path = OSC/F53OSCProtocols.h; sourceTree = "<group>"; };
+		FAC696451B8CAEA700AC5E18 /* F53OSCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCServer.h; path = OSC/F53OSCServer.h; sourceTree = "<group>"; };
+		FAC696461B8CAEA700AC5E18 /* F53OSCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCServer.m; path = OSC/F53OSCServer.m; sourceTree = "<group>"; };
+		FAC696471B8CAEA700AC5E18 /* F53OSCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCSocket.h; path = OSC/F53OSCSocket.h; sourceTree = "<group>"; };
+		FAC696481B8CAEA700AC5E18 /* F53OSCSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCSocket.m; path = OSC/F53OSCSocket.m; sourceTree = "<group>"; };
+		FAC696491B8CAEA700AC5E18 /* F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F53OSCTimeTag.h; path = OSC/F53OSCTimeTag.h; sourceTree = "<group>"; };
+		FAC6964A1B8CAEA700AC5E18 /* F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F53OSCTimeTag.m; path = OSC/F53OSCTimeTag.m; sourceTree = "<group>"; };
+		FAC6964B1B8CAEA700AC5E18 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = OSC/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		FAC6964C1B8CAEA800AC5E18 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = OSC/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		FAC6964D1B8CAEA800AC5E18 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = OSC/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		FAC6964E1B8CAEA800AC5E18 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = OSC/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		FAC6964F1B8CAEA800AC5E18 /* NSData+F53OSCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+F53OSCBlob.h"; path = "OSC/NSData+F53OSCBlob.h"; sourceTree = "<group>"; };
+		FAC696501B8CAEA800AC5E18 /* NSData+F53OSCBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+F53OSCBlob.m"; path = "OSC/NSData+F53OSCBlob.m"; sourceTree = "<group>"; };
+		FAC696511B8CAEA800AC5E18 /* NSDate+F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+F53OSCTimeTag.h"; path = "OSC/NSDate+F53OSCTimeTag.h"; sourceTree = "<group>"; };
+		FAC696521B8CAEA800AC5E18 /* NSDate+F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+F53OSCTimeTag.m"; path = "OSC/NSDate+F53OSCTimeTag.m"; sourceTree = "<group>"; };
+		FAC696531B8CAEA800AC5E18 /* NSNumber+F53OSCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+F53OSCNumber.h"; path = "OSC/NSNumber+F53OSCNumber.h"; sourceTree = "<group>"; };
+		FAC696541B8CAEA800AC5E18 /* NSNumber+F53OSCNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+F53OSCNumber.m"; path = "OSC/NSNumber+F53OSCNumber.m"; sourceTree = "<group>"; };
+		FAC696551B8CAEA800AC5E18 /* NSString+F53OSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+F53OSCString.h"; path = "OSC/NSString+F53OSCString.h"; sourceTree = "<group>"; };
+		FAC696561B8CAEA800AC5E18 /* NSString+F53OSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+F53OSCString.m"; path = "OSC/NSString+F53OSCString.m"; sourceTree = "<group>"; };
+		FAF12B061AEA5E1200C8327D /* Fuchair 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuchair 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF12B0A1AEA5E1200C8327D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF12B0B1AEA5E1200C8327D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAF12B0D1AEA5E1200C8327D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAF12B0E1AEA5E1200C8327D /* AppDelegate.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		FAF12B101AEA5E1200C8327D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FAF12B111AEA5E1200C8327D /* ViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		FAF12B141AEA5E1200C8327D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAF12B161AEA5E1200C8327D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAF12B191AEA5E1200C8327D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FAF12B1F1AEA5E1200C8327D /* Fuchair 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuchair 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF12B241AEA5E1200C8327D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF12B251AEA5E1200C8327D /* Fuchair_2_0Tests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Fuchair_2_0Tests.mm; sourceTree = "<group>"; };
+		FAF12B691AEA5FB700C8327D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FAF12B6E1AEA626100C8327D /* SensorOscSend.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = SensorOscSend.mm; sourceTree = "<group>"; };
+		FAF12B6F1AEA626100C8327D /* SensorOscSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorOscSend.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF12B031AEA5E1200C8327D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF12B6A1AEA5FB700C8327D /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF12B1C1AEA5E1200C8327D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAF12AFD1AEA5E1200C8327D = {
+			isa = PBXGroup;
+			children = (
+				FAF12B691AEA5FB700C8327D /* CoreMotion.framework */,
+				FAF12B081AEA5E1200C8327D /* Fuchair 2.0 */,
+				FAF12B221AEA5E1200C8327D /* Fuchair 2.0Tests */,
+				FAF12B071AEA5E1200C8327D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF12B071AEA5E1200C8327D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF12B061AEA5E1200C8327D /* Fuchair 2.0.app */,
+				FAF12B1F1AEA5E1200C8327D /* Fuchair 2.0Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF12B081AEA5E1200C8327D /* Fuchair 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				FAC696301B8CAD2300AC5E18 /* Acceleration.mm */,
+				FAC6962F1B8CAD2300AC5E18 /* Acceleration.h */,
+				FAC696341B8CAD2300AC5E18 /* Motion.mm */,
+				FAC696331B8CAD2300AC5E18 /* Motion.h */,
+				FAF12B6E1AEA626100C8327D /* SensorOscSend.mm */,
+				FAF12B6F1AEA626100C8327D /* SensorOscSend.h */,
+				FAF12B0E1AEA5E1200C8327D /* AppDelegate.mm */,
+				FAF12B0D1AEA5E1200C8327D /* AppDelegate.h */,
+				FAF12B111AEA5E1200C8327D /* ViewController.mm */,
+				FAF12B101AEA5E1200C8327D /* ViewController.h */,
+				FAF12B311AEA5EBF00C8327D /* OSC */,
+				FAF12B131AEA5E1200C8327D /* Main.storyboard */,
+				FAF12B161AEA5E1200C8327D /* Images.xcassets */,
+				FAF12B181AEA5E1200C8327D /* LaunchScreen.xib */,
+				FAF12B091AEA5E1200C8327D /* Supporting Files */,
+			);
+			path = "Fuchair 2.0";
+			sourceTree = "<group>";
+		};
+		FAF12B091AEA5E1200C8327D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAF12B0A1AEA5E1200C8327D /* Info.plist */,
+				FAF12B0B1AEA5E1200C8327D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF12B221AEA5E1200C8327D /* Fuchair 2.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF12B251AEA5E1200C8327D /* Fuchair_2_0Tests.mm */,
+				FAF12B231AEA5E1200C8327D /* Supporting Files */,
+			);
+			path = "Fuchair 2.0Tests";
+			sourceTree = "<group>";
+		};
+		FAF12B231AEA5E1200C8327D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAF12B241AEA5E1200C8327D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF12B311AEA5EBF00C8327D /* OSC */ = {
+			isa = PBXGroup;
+			children = (
+				FAC696381B8CAEA700AC5E18 /* F53OSC.h */,
+				FAC696391B8CAEA700AC5E18 /* F53OSCBundle.h */,
+				FAC6963A1B8CAEA700AC5E18 /* F53OSCBundle.m */,
+				FAC6963B1B8CAEA700AC5E18 /* F53OSCClient.h */,
+				FAC6963C1B8CAEA700AC5E18 /* F53OSCClient.m */,
+				FAC6963D1B8CAEA700AC5E18 /* F53OSCFoundationAdditions.h */,
+				FAC6963E1B8CAEA700AC5E18 /* F53OSCMessage.h */,
+				FAC6963F1B8CAEA700AC5E18 /* F53OSCMessage.m */,
+				FAC696401B8CAEA700AC5E18 /* F53OSCPacket.h */,
+				FAC696411B8CAEA700AC5E18 /* F53OSCPacket.m */,
+				FAC696421B8CAEA700AC5E18 /* F53OSCParser.h */,
+				FAC696431B8CAEA700AC5E18 /* F53OSCParser.m */,
+				FAC696441B8CAEA700AC5E18 /* F53OSCProtocols.h */,
+				FAC696451B8CAEA700AC5E18 /* F53OSCServer.h */,
+				FAC696461B8CAEA700AC5E18 /* F53OSCServer.m */,
+				FAC696471B8CAEA700AC5E18 /* F53OSCSocket.h */,
+				FAC696481B8CAEA700AC5E18 /* F53OSCSocket.m */,
+				FAC696491B8CAEA700AC5E18 /* F53OSCTimeTag.h */,
+				FAC6964A1B8CAEA700AC5E18 /* F53OSCTimeTag.m */,
+				FAC6964B1B8CAEA700AC5E18 /* GCDAsyncSocket.h */,
+				FAC6964C1B8CAEA800AC5E18 /* GCDAsyncSocket.m */,
+				FAC6964D1B8CAEA800AC5E18 /* GCDAsyncUdpSocket.h */,
+				FAC6964E1B8CAEA800AC5E18 /* GCDAsyncUdpSocket.m */,
+				FAC6964F1B8CAEA800AC5E18 /* NSData+F53OSCBlob.h */,
+				FAC696501B8CAEA800AC5E18 /* NSData+F53OSCBlob.m */,
+				FAC696511B8CAEA800AC5E18 /* NSDate+F53OSCTimeTag.h */,
+				FAC696521B8CAEA800AC5E18 /* NSDate+F53OSCTimeTag.m */,
+				FAC696531B8CAEA800AC5E18 /* NSNumber+F53OSCNumber.h */,
+				FAC696541B8CAEA800AC5E18 /* NSNumber+F53OSCNumber.m */,
+				FAC696551B8CAEA800AC5E18 /* NSString+F53OSCString.h */,
+				FAC696561B8CAEA800AC5E18 /* NSString+F53OSCString.m */,
+			);
+			name = OSC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF12B051AEA5E1200C8327D /* Fuchair 2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF12B291AEA5E1200C8327D /* Build configuration list for PBXNativeTarget "Fuchair 2.0" */;
+			buildPhases = (
+				FAF12B021AEA5E1200C8327D /* Sources */,
+				FAF12B031AEA5E1200C8327D /* Frameworks */,
+				FAF12B041AEA5E1200C8327D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fuchair 2.0";
+			productName = "Fuchair 2.0";
+			productReference = FAF12B061AEA5E1200C8327D /* Fuchair 2.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAF12B1E1AEA5E1200C8327D /* Fuchair 2.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF12B2C1AEA5E1200C8327D /* Build configuration list for PBXNativeTarget "Fuchair 2.0Tests" */;
+			buildPhases = (
+				FAF12B1B1AEA5E1200C8327D /* Sources */,
+				FAF12B1C1AEA5E1200C8327D /* Frameworks */,
+				FAF12B1D1AEA5E1200C8327D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF12B211AEA5E1200C8327D /* PBXTargetDependency */,
+			);
+			name = "Fuchair 2.0Tests";
+			productName = "Fuchair 2.0Tests";
+			productReference = FAF12B1F1AEA5E1200C8327D /* Fuchair 2.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF12AFE1AEA5E1200C8327D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Danny van Swieten";
+				TargetAttributes = {
+					FAF12B051AEA5E1200C8327D = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = XPBS2KCPNU;
+					};
+					FAF12B1E1AEA5E1200C8327D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FAF12B051AEA5E1200C8327D;
+					};
+				};
+			};
+			buildConfigurationList = FAF12B011AEA5E1200C8327D /* Build configuration list for PBXProject "Fuchair 2.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF12AFD1AEA5E1200C8327D;
+			productRefGroup = FAF12B071AEA5E1200C8327D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF12B051AEA5E1200C8327D /* Fuchair 2.0 */,
+				FAF12B1E1AEA5E1200C8327D /* Fuchair 2.0Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF12B041AEA5E1200C8327D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF12B151AEA5E1200C8327D /* Main.storyboard in Resources */,
+				FAF12B1A1AEA5E1200C8327D /* LaunchScreen.xib in Resources */,
+				FAF12B171AEA5E1200C8327D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF12B1D1AEA5E1200C8327D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF12B021AEA5E1200C8327D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC696351B8CAD2300AC5E18 /* Acceleration.mm in Sources */,
+				FAF12B701AEA626100C8327D /* SensorOscSend.mm in Sources */,
+				FAF12B121AEA5E1200C8327D /* ViewController.mm in Sources */,
+				FAC696581B8CAEA800AC5E18 /* F53OSCClient.m in Sources */,
+				FAC6965A1B8CAEA800AC5E18 /* F53OSCPacket.m in Sources */,
+				FAC6965D1B8CAEA800AC5E18 /* F53OSCSocket.m in Sources */,
+				FAC6965F1B8CAEA800AC5E18 /* GCDAsyncSocket.m in Sources */,
+				FAF12B0F1AEA5E1200C8327D /* AppDelegate.mm in Sources */,
+				FAF12B0C1AEA5E1200C8327D /* main.m in Sources */,
+				FAC696631B8CAEA800AC5E18 /* NSNumber+F53OSCNumber.m in Sources */,
+				FAC6965C1B8CAEA800AC5E18 /* F53OSCServer.m in Sources */,
+				FAC6965B1B8CAEA800AC5E18 /* F53OSCParser.m in Sources */,
+				FAC696621B8CAEA800AC5E18 /* NSDate+F53OSCTimeTag.m in Sources */,
+				FAC696571B8CAEA800AC5E18 /* F53OSCBundle.m in Sources */,
+				FAC696601B8CAEA800AC5E18 /* GCDAsyncUdpSocket.m in Sources */,
+				FAC696641B8CAEA800AC5E18 /* NSString+F53OSCString.m in Sources */,
+				FAC696591B8CAEA800AC5E18 /* F53OSCMessage.m in Sources */,
+				FAC6965E1B8CAEA800AC5E18 /* F53OSCTimeTag.m in Sources */,
+				FAC696611B8CAEA800AC5E18 /* NSData+F53OSCBlob.m in Sources */,
+				FAC696371B8CAD2300AC5E18 /* Motion.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF12B1B1AEA5E1200C8327D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF12B261AEA5E1200C8327D /* Fuchair_2_0Tests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAF12B211AEA5E1200C8327D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF12B051AEA5E1200C8327D /* Fuchair 2.0 */;
+			targetProxy = FAF12B201AEA5E1200C8327D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAF12B131AEA5E1200C8327D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF12B141AEA5E1200C8327D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAF12B181AEA5E1200C8327D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF12B191AEA5E1200C8327D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAF12B271AEA5E1200C8327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAF12B281AEA5E1200C8327D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAF12B2A1AEA5E1200C8327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Fuchair 2.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FAF12B2B1AEA5E1200C8327D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Fuchair 2.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FAF12B2D1AEA5E1200C8327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Fuchair 2.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuchair 2.0.app/Fuchair 2.0";
+			};
+			name = Debug;
+		};
+		FAF12B2E1AEA5E1200C8327D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Fuchair 2.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuchair 2.0.app/Fuchair 2.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF12B011AEA5E1200C8327D /* Build configuration list for PBXProject "Fuchair 2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF12B271AEA5E1200C8327D /* Debug */,
+				FAF12B281AEA5E1200C8327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF12B291AEA5E1200C8327D /* Build configuration list for PBXNativeTarget "Fuchair 2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF12B2A1AEA5E1200C8327D /* Debug */,
+				FAF12B2B1AEA5E1200C8327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF12B2C1AEA5E1200C8327D /* Build configuration list for PBXNativeTarget "Fuchair 2.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF12B2D1AEA5E1200C8327D /* Debug */,
+				FAF12B2E1AEA5E1200C8327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF12AFE1AEA5E1200C8327D /* Project object */;
+}
